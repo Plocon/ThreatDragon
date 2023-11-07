@@ -1,5 +1,5 @@
 {
-  "version": "2.0.7",
+  "version": "2.1.1",
   "summary": {
     "title": "DevSecOps - P1",
     "owner": "",
@@ -9,7 +9,7 @@
   "detail": {
     "contributors": [],
     "diagrams": [],
-    "diagramTop": 0,
+    "diagramTop": 2,
     "reviewer": "",
     "threatTop": 0
   }

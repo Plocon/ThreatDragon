@@ -11,7 +11,7 @@
     "diagrams": [
       {
         "id": 0,
-        "title": "New STRIDE diagram",
+        "title": "Default",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -20,7 +20,7 @@
       },
       {
         "id": 1,
-        "title": "New STRIDE diagram",
+        "title": "Modell nach A3",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -29,7 +29,7 @@
       },
       {
         "id": 2,
-        "title": "New STRIDE diagram",
+        "title": "Modell am Ende",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",

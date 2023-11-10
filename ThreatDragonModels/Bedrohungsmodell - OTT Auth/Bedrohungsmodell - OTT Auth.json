@@ -1637,40 +1637,6 @@
               "protocol": "",
               "isPublicNetwork": false
             }
-          },
-          {
-            "position": {
-              "x": 523,
-              "y": -377
-            },
-            "size": {
-              "width": 60,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Test\n"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "id": "72259cb9-35df-43d1-813d-717e55dfc226",
-            "zIndex": 14,
-            "data": {
-              "type": "tm.Process",
-              "name": "Test\n",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": []
-            }
           }
         ],
         "version": "2.1.1",

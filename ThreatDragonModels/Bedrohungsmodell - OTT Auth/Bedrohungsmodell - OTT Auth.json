@@ -5915,40 +5915,6 @@
                 }
               ]
             }
-          },
-          {
-            "position": {
-              "x": 869,
-              "y": -11
-            },
-            "size": {
-              "width": 60,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Test"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "id": "3f8f7fca-72ae-43fe-a56a-d94a985b6660",
-            "zIndex": 22,
-            "data": {
-              "type": "tm.Process",
-              "name": "Test",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": []
-            }
           }
         ],
         "version": "2.1.1",

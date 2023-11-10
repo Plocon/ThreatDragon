@@ -1633,7 +1633,7 @@
           }
         ],
         "version": "2.1.1",
-        "title": "Architekturdiagramm",
+        "title": "Default",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "id": 0,
         "diagramType": "STRIDE"
@@ -3783,7 +3783,7 @@
           }
         ],
         "version": "2.1.1",
-        "title": "Architekturdiagramm",
+        "title": "Modell nach A3",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "id": 1,
         "diagramType": "STRIDE"
@@ -5918,7 +5918,7 @@
           }
         ],
         "version": "2.1.1",
-        "title": "Architekturdiagramm",
+        "title": "Modell am Ende",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "id": 2,
         "diagramType": "STRIDE"

@@ -3833,7 +3833,7 @@
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "Man meldet sich als ein anderer Benutzer an und greift auf seine Daten zu\nID: CAPEC-151\nGather Victim Identity Information\n(4+6+6+4+9)/5 = 5,8",
-                  "mitigation": "Starkes Passwort: man muss X Zeichen haben und es muss Sonderzeichen geben\n-> Brute-Force Angriffe werden deutlich erschwert\n(4+4+4+4+7)/5 = 4,6\nD3-SPP ",
+                  "mitigation": "Starkes Passwort: man muss X Zeichen haben und es muss Sonderzeichen geben\n-> Brute-Force Angriffe werden deutlich erschwert\n(4+4+4+4+7)/5 = 4,6\nD3-SPP \n2.1.1 Verify that users set passwords are at least 12 Chars in length\nMASVS-AUTH-3 The app secures sensitive operations with additional authentication.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 104,
@@ -3859,7 +3859,7 @@
                   "severity": "Medium",
                   "type": "Elevation of privilege",
                   "description": "Angreifer erhält durch Login mehr Rechte als gewollt\nID: CAPEC-233\nAccount Manipulation\n(8+6+5+7+5)/5 = 6,2",
-                  "mitigation": "2.Faktor für Admins: wenn ein Admin sich einloggen will, braucht er nen 2. Faktor\n-> Angreifer kann nicht leicht an Adminrechte kommen nur durch Passwort\n(8+6+3+6+5)/5 = 5,6\nD3-MFA",
+                  "mitigation": "2.Faktor für Admins: wenn ein Admin sich einloggen will, braucht er nen 2. Faktor\n-> Angreifer kann nicht leicht an Adminrechte kommen nur durch Passwort\n(8+6+3+6+5)/5 = 5,6\nD3-MFA\n2.2.7 Verify intent to authenticate by requiring the entry of an OTP \ntoken or user-initiated action such as a button press on a FIDO \nhardware key\nMASVS-AUTH-3 The app secures sensitive operations with additional authentication.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 129,
@@ -3907,7 +3907,7 @@
                   "severity": "Medium",
                   "type": "Denial of service",
                   "description": "Wird überflutet von Nachrichten\nID: CAPEC-125\nDirect Network Food\n(10+9+4+10+4)/5 = 7,4",
-                  "mitigation": "Whitelist: nur bestimmte Adressen dürfen anfragen stellen\n->kann nicht mit Anfragen von außerhalb geflutet werden\n(10+8+2+10+3)/5 = 7\nD3-DNSAL",
+                  "mitigation": "Whitelist: nur bestimmte Adressen dürfen anfragen stellen\n->kann nicht mit Anfragen von außerhalb geflutet werden\n(10+8+2+10+3)/5 = 7\nD3-DNSAL\n11.1.4 Verify that the application has anti-automation controls to protect against \nexcessive calls such as mass data exfiltration, business logic requests, file \nuploads or denial of service attacks.\nMASVS-NETWORK-1",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 130,
@@ -4031,7 +4031,7 @@
                   "severity": "Medium",
                   "type": "Tampering",
                   "description": "Der One Time Token wird geändert / missbraucht\nID: CAPEC-39\nAccess Token Manipulation\n(3+8+7+1+7)/5 = 5,2",
-                  "mitigation": "Verschlüsseln: das Token wird verschlüsselt\n-> man kann von außen das Token nicht entschlüsseln\n(3+6+5+1+6)/5 = 4,2\nD3-FE",
+                  "mitigation": "Verschlüsseln: das Token wird verschlüsselt\n-> man kann von außen das Token nicht entschlüsseln\n(3+6+5+1+6)/5 = 4,2\nD3-FE\n8.3.7 Verify that sensitive or private information that is required to be encrypted, is \nencrypted using approved algorithms that provide both confidentiality and \nintegrity.\nMASVS-CRYPTO-1",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 137,
@@ -4383,8 +4383,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -4408,22 +4407,8 @@
               "protocol": "",
               "isEncrypted": false,
               "isPublicNetwork": false,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "e567922a-a9cb-4b40-bfa0-4afbb1f28098",
-                  "title": "Log Daten ändern",
-                  "status": "Open",
-                  "severity": "Low",
-                  "type": "Tampering",
-                  "description": "Angreifer verändert die Log-Daten\nID: CAPEC-81\nLog Enumeration\n(5+9+7+3+8)/5 = 6,4",
-                  "mitigation": "Whitelist: nur bestimmte Adressen dürfen Logs schreiben\n->Logs können von außen nicht verändert werden\n(5+9+3+3+5)/5 = 5\nD3-DNSAL",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 105,
-                  "score": ""
-                }
-              ]
+              "hasOpenThreats": false,
+              "threats": []
             },
             "id": "81c8482c-19ed-41ab-bae2-a5561223b4b5",
             "labels": [
@@ -5529,7 +5514,7 @@
                   "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "Informationen werden verschlüsselt\n(5+7+7+2+7)/5 = 5,6",
-                  "mitigation": "Backups: Täglich/Wöchentlich Backups von allen Daten machen\n-> Wenn Daten verschlüsselt werden, kann man mit Backups weiterarbeiten und verliert nicht alle Daten\n(2+7+7+2+7)/5 = 5\nM1053 Data Backup\n",
+                  "mitigation": "Backups: Täglich/Wöchentlich Backups von allen Daten machen\n-> Wenn Daten verschlüsselt werden, kann man mit Backups weiterarbeiten und verliert nicht alle Daten\n(2+7+7+2+7)/5 = 5\nM1053 Data Backup\n8.1.5 Verify that regular backups of important data are performed and that test \nrestoration of data is performed.\nMASVS-STORAGE-1\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 138,
@@ -5682,7 +5667,7 @@
                   "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "Es werden wichtige Informationen zurückgehalten\nID: CAPEC-480\n(2+9+8+1+8)/5 = 5,6",
-                  "mitigation": "Decoy: Ein Decoy File um herauszufinden, wer und ob Informationen zurückgehalten werden\n-> fällt auf wenn Infos daraus fehlen\n(2+7+8+1+8)/5 = 5,4\nD3-DF",
+                  "mitigation": "Decoy: Ein Decoy File um herauszufinden, wer und ob Informationen zurückgehalten werden\n-> fällt auf wenn Infos daraus fehlen\n(2+7+8+1+8)/5 = 5,4\nD3-DF\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 134,
@@ -5734,7 +5719,7 @@
                   "severity": "Medium",
                   "type": "Tampering",
                   "description": "Angreifer verändert Daten\nID: CAPEC-39\nData Manipulation\n(7+8+4+1+4)/5 = 4,8",
-                  "mitigation": "Whitelist: Nur befügte können drauf zugreifen\n-> niemand kann einfach so Daten ändern\n(7+6+2+1+3)/5 = 3,8",
+                  "mitigation": "Whitelist: Nur Befugte können drauf zugreifen\n-> niemand kann einfach so Daten ändern\n(7+6+2+1+3)/5 = 3,8\n4.1.2 Verify that all user and data attributes and policy information used by access \ncontrols cannot be manipulated by end users unless specifically authorized.\n\nMASVS-AUTH-1",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 131,
@@ -5786,7 +5771,7 @@
                   "severity": "Medium",
                   "type": "Denial of service",
                   "description": "Überfordert durch Anfragen\nID: CAPEC-125\nDirect Network Food\n(3+8+6+1+6)/5 = 4,8",
-                  "mitigation": "Whitelist: nur bestimmte Adressen dürfen anfragen stellen\n->kann nicht mit Anfragen von außerhalb geflutet werden\n(3+6+4+1+5)/5 = 3,8\nD3-DNSAL",
+                  "mitigation": "Whitelist: nur bestimmte Adressen dürfen anfragen stellen\n->kann nicht mit Anfragen von außerhalb geflutet werden\n(3+6+4+1+5)/5 = 3,8\nD3-DNSAL\n11.1.4 Verify that the application has anti-automation controls to protect against \nexcessive calls such as mass data exfiltration, business logic requests, file \nuploads or denial of service attacks.\nMASVS-NETWORK-1",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 135,

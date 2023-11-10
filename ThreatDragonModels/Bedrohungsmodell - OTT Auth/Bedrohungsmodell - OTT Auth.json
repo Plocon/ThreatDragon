@@ -1903,8 +1903,8 @@
           },
           {
             "position": {
-              "x": 650,
-              "y": 380
+              "x": 640,
+              "y": 390
             },
             "size": {
               "width": 90,
@@ -2142,6 +2142,40 @@
                   "score": ""
                 }
               ]
+            }
+          },
+          {
+            "position": {
+              "x": 912,
+              "y": -11
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "TEST"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "d2826386-a105-4e36-8003-91d4e50d8674",
+            "zIndex": 22,
+            "data": {
+              "type": "tm.Process",
+              "name": "TEST",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
             }
           }
         ],

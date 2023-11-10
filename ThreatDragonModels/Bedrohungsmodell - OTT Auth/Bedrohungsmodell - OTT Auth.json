@@ -2,7 +2,7 @@
   "version": "2.1.1",
   "summary": {
     "title": "Bedrohungsmodell - OTT Auth",
-    "owner": "",
+    "owner": "Yannik Pott und Martin Nguyen",
     "description": "",
     "id": 0
   },
@@ -5925,7 +5925,7 @@
       }
     ],
     "diagramTop": 3,
-    "reviewer": "",
+    "reviewer": "Sascha Hack, Georg Neugebauer",
     "threatTop": 0
   }
 }
